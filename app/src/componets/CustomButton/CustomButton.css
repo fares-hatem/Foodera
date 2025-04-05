@@ -1,0 +1,22 @@
+.custom-btn {
+  color: #fff !important;
+  background-color: #A82D49 !important;
+  border: solid 3px #A82D49 !important;
+  padding: 5px 20px !important;
+  border-radius: 20px 0px !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  width: 150px !important;
+  text-align: center !important;
+  margin: 0px !important;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ffffff00 !important;
+  color: #A82D49 !important;
+  transition: 0.2s ease-in-out !important;
+}
+

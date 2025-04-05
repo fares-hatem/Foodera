@@ -1,0 +1,99 @@
+.slider {
+  background-color: #A82D49;
+  padding-bottom: 180px;
+  padding-top: 80px;
+  margin-bottom: 50px;
+  position: relative; /* مهم لتحديد موضع العناصر داخله */
+}
+
+.testimonial-slider {
+  width: 60%;
+  height: auto;
+  min-height: 280px; /* ✅ يضمن عدم تحرك المؤشرات */
+  padding: 10px 0px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  position: relative; /* لتحديد مكان المؤشرات تحته */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ✅ يضمن أن المحتوى يظل في المنتصف */
+  align-items: center;
+}
+@media (max-width: 768px) { /* لما الشاشة تبقى صغيرة */
+  .testimonial-slider {
+    width: 90%;
+  }
+}
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  font-size: 20px;
+  color: #A82D49;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 350;
+}
+.testimonial-name, .testimonial-name2 {
+  margin: 20px 0px;
+  font-size: 15px;
+  color: #A82D49;
+  font-weight: bold;
+}
+.testimonial-name2 {
+  margin: 22px 0px;
+}
+
+/* ✅ المؤشرات ثابتة */
+.carousel-indicators {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  transform: scale(1.1);
+  background-color: white;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 80px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 37px;
+}
